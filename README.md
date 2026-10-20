@@ -174,17 +174,3 @@ Metode konvensional layak menjadi baseline yang kuat; model yang lebih kompleks 
 - `reports/dataset_metadata.json`: sumber, karakteristik data, dan distribusi kelas.
 - `reports/figures/`: confusion matrix, F1 per kelas, learning curve, dan coverage/accuracy.
 
-## Mengunggah ke GitHub
-
-Buat repositori bernama `klasifikasi-citra-sentinel2-rf-vs-cnn`. Dari folder proyek:
-
-```powershell
-git init
-git add README.md requirements.txt .gitignore config.yaml data src tests reports
-git commit -m "Tambahkan perbandingan RF dan CNN pada EuroSAT"
-git branch -M main
-git remote add origin https://github.com/USERNAME/klasifikasi-citra-sentinel2-rf-vs-cnn.git
-git push -u origin main
-```
-
-Ganti `USERNAME` dengan nama akun GitHub. `data/raw/` diabaikan oleh `.gitignore` dan tidak perlu ditambahkan ke repositori.
