@@ -1,0 +1,100 @@
+{
+  "dataset": "EuroSAT RGB",
+  "source": "nielsr/eurosat-demo (Hugging Face mirror)",
+  "source_url": "https://huggingface.co/datasets/nielsr/eurosat-demo",
+  "mirror_dataset_version": "nielsr/eurosat-demo (revision 61bab8317ee7f13bea1831f2ec3a7fa571a01a81)",
+  "archive_name": "eurosat_rgb.parquet",
+  "archive_bytes": 88441801,
+  "original_image_count": 27000,
+  "subset_image_count": 2000,
+  "subset_seed": 20261020,
+  "image_height": 64,
+  "image_width": 64,
+  "bands": [
+    "Red",
+    "Green",
+    "Blue"
+  ],
+  "band_count": 3,
+  "ndvi_available": false,
+  "ndvi_note": "NDVI tidak dihitung karena versi RGB tidak memiliki pita NIR.",
+  "class_counts_original": {
+    "AnnualCrop": 3000,
+    "Forest": 3000,
+    "HerbaceousVegetation": 3000,
+    "Highway": 2500,
+    "Industrial": 2500,
+    "Pasture": 2000,
+    "PermanentCrop": 2500,
+    "Residential": 3000,
+    "River": 2500,
+    "SeaLake": 3000
+  },
+  "class_counts_subset": {
+    "AnnualCrop": 222,
+    "Forest": 223,
+    "HerbaceousVegetation": 223,
+    "Highway": 185,
+    "Industrial": 185,
+    "Pasture": 148,
+    "PermanentCrop": 185,
+    "Residential": 222,
+    "River": 185,
+    "SeaLake": 222
+  },
+  "class_names": [
+    "AnnualCrop",
+    "Forest",
+    "HerbaceousVegetation",
+    "Highway",
+    "Industrial",
+    "Pasture",
+    "PermanentCrop",
+    "Residential",
+    "River",
+    "SeaLake"
+  ],
+  "image_mode": "RGB",
+  "array_dtype": "uint8",
+  "python_version": "3.11.9",
+  "numpy_version": "2.1.3",
+  "pandas_version": "2.3.2",
+  "scikit_learn_version": "1.7.2",
+  "pytorch_version": "2.14.1+cpu",
+  "device": "cpu",
+  "random_seeds_used": [
+    11,
+    23,
+    37
+  ],
+  "split_fractions": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "learning_curve_fractions": [
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "rf_hyperparameters": {
+    "n_estimators": 150,
+    "max_depth": null,
+    "min_samples_leaf": 1,
+    "max_features": "sqrt",
+    "n_jobs": -1
+  },
+  "cnn_hyperparameters": {
+    "epochs": 8,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "patience": 2,
+    "base_channels": 16,
+    "cpu_threads": 4,
+    "device": "cpu"
+  },
+  "cnn_parameter_count": 24458,
+  "warning": "EuroSAT RGB mengukur klasifikasi tutupan lahan, bukan atribusi pemicu deforestasi; hasil tidak dibandingkan dengan angka seminar."
+}
